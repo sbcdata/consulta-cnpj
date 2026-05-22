@@ -1,4 +1,13 @@
 /* ========= LOGIN ========= */
+@keyframes loginFadeLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes loginSlideRight {
+  from { opacity: 0; transform: translateX(28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
 .login-shell {
   min-height: 100vh;
   display: grid;
@@ -15,6 +24,7 @@
 }
 
 .login-left {
+  animation: loginFadeLeft 0.55s ease both;
   background: var(--blue-900);
   background-image:
     radial-gradient(
@@ -31,7 +41,7 @@
   padding: 56px 56px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   overflow: hidden;
 }
@@ -59,29 +69,13 @@
 .login-brand {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
 }
-.login-brand .logo-square {
-  width: 36px;
-  height: 36px;
-  background: var(--blue-300);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--blue-900);
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: -0.04em;
-}
-.login-brand .brand-name {
-  color: white;
-}
-.login-brand .brand-name .accent {
-  color: var(--blue-300);
+.login-logo {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 28px;
 }
 
 .login-headline {
@@ -137,9 +131,12 @@
   display: flex;
   justify-content: space-between;
   letter-spacing: 0.04em;
+  margin-top: 48px;
+  width: 100%;
 }
 
 .login-right {
+  animation: loginSlideRight 0.55s 0.08s ease both;
   padding: 56px 56px;
   display: flex;
   flex-direction: column;

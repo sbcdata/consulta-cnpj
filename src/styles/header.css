@@ -5,68 +5,95 @@
   flex-direction: column;
 }
 
-.main-header {
-  background: var(--blue-900);
-  color: white;
-  padding: 18px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.header-wrap {
   position: sticky;
   top: 0;
   z-index: 10;
+  background: var(--blue-900);
   border-bottom: 1px solid var(--blue-800);
 }
-.header-brand {
+
+.main-header {
+  background: var(--blue-900);
+  color: white;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---- Left logo ---- */
+.header-logo-left {
+  display: flex;
+  align-items: center;
+}
+.logo-left-img {
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ---- Right brand ---- */
+.header-brand-right {
   display: flex;
   align-items: center;
   gap: 14px;
 }
-.header-brand .logo-square {
-  width: 32px;
-  height: 32px;
-  background: var(--blue-300);
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--blue-900);
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: -0.04em;
-}
-.header-brand .name {
+.header-brand-right .name {
   font-weight: 600;
   font-size: 16px;
   letter-spacing: -0.02em;
+  color: white;
 }
-.header-brand .name .accent {
+.header-brand-right .name .accent {
   color: var(--blue-300);
 }
-.header-brand .divider {
+.header-brand-right .divider {
   width: 1px;
   height: 16px;
   background: rgba(255, 255, 255, 0.18);
 }
-.header-brand .tag {
+.header-brand-right .tag {
   font-size: 12px;
   color: var(--blue-200);
   font-weight: 500;
 }
+
+/* ---- Actions ---- */
 .header-actions {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.header-org {
-  font-size: 12px;
-  color: var(--blue-300);
-  font-weight: 500;
+
+/* ---- Progress bar ---- */
+.header-progress-bar {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.07);
 }
-@media (max-width: 700px) {
-  .header-org {
-    display: none;
-  }
+.header-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue-400), var(--blue-300));
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0 2px 2px 0;
+}
+
+/* ---- Ghost button ---- */
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-ghost:hover {
+  background: var(--blue-700);
+  border-color: var(--blue-500);
 }
 
 /* ========= SEARCH ========= */
@@ -74,7 +101,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  position: relative;
 }
 
 .search-input {
@@ -89,18 +115,18 @@
   transition: border-color 0.2s, background 0.2s;
   letter-spacing: 0.02em;
 }
-
+.search-input.mobile {
+  width: 100%;
+}
 .search-input::placeholder {
   color: rgba(255, 255, 255, 0.3);
   font-family: 'Inter Tight', sans-serif;
   letter-spacing: normal;
 }
-
 .search-input:focus {
   border-color: var(--blue-300);
   background: rgba(255, 255, 255, 0.13);
 }
-
 .search-input.search-error {
   border-color: #f87171;
 }
@@ -117,8 +143,8 @@
   cursor: pointer;
   transition: background 0.2s;
   white-space: nowrap;
+  flex-shrink: 0;
 }
-
 .search-btn:hover {
   background: var(--blue-500);
 }
@@ -129,24 +155,51 @@
   white-space: nowrap;
 }
 
+/* ---- Mobile search icon ---- */
+.search-icon-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+/* ---- Mobile search drawer ---- */
+.mobile-search-drawer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px 12px;
+  background: var(--blue-800);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  animation: slideDown 0.2s ease both;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Responsive ---- */
 @media (max-width: 900px) {
   .header-search {
     display: none;
   }
+  .search-icon-btn {
+    display: flex;
+  }
+  .header-brand-right .tag {
+    display: none;
+  }
 }
-.btn-ghost {
-  background: rgba(255, 255, 255, 0.06);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.btn-ghost:hover {
-  background: var(--blue-700);
-  border-color: var(--blue-500);
+
+@media (max-width: 600px) {
+  .main-header {
+    padding: 12px 16px;
+  }
+  .logo-left-img {
+    height: 34px;
+  }
 }

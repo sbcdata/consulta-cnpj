@@ -1,12 +1,21 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import StepHead from "./StepHead";
 import cnpjs from "../data/cnpjs.json";
 
 export default function CNPJScreen({ uf, municipio, onSelect }) {
+  const [copiado, setCopiado] = useState(null);
+
   const lista = useMemo(
     () => cnpjs.filter((e) => e.uf === uf && e.municipio === municipio),
     [uf, municipio],
   );
+
+  const copiar = (e, cnpj) => {
+    e.stopPropagation();
+    navigator.clipboard?.writeText(cnpj.cnpj);
+    setCopiado(cnpj.cnpj);
+    setTimeout(() => setCopiado(null), 2000);
+  };
 
   return (
     <>
@@ -30,6 +39,13 @@ export default function CNPJScreen({ uf, municipio, onSelect }) {
               <div className="name">{e.nome}</div>
               <div className="meta mono">CNPJ {e.cnpj}</div>
             </div>
+            <button
+              className={`row-copy${copiado === e.cnpj ? " copied" : ""}`}
+              onClick={(ev) => copiar(ev, e)}
+              title="Copiar CNPJ"
+            >
+              {copiado === e.cnpj ? "✓" : "⎘"}
+            </button>
             <div className="row-arrow">→</div>
           </div>
         ))}

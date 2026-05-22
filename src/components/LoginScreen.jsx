@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { SENHA } from "../config/auth";
 import cnpjs from "../data/cnpjs.json";
+import logoSemFundo from "../assets/logo-sem-fundo-sbcdata.png";
 
 export default function LoginScreen({ onLogin }) {
   const [senha, setSenha] = useState("");
@@ -21,36 +22,28 @@ export default function LoginScreen({ onLogin }) {
   return (
     <div className="login-shell">
       <div className="login-left">
-        <div className="login-brand">
-          <div className="brand-name">
-            SBC<span className="accent">Data</span>
+        <h1 className="login-headline">
+          Consulta de cnpjs,
+          <br />
+          <span className="highlight">por SBCDATA.</span>
+        </h1>
+        <p className="login-sub">
+          Plataforma exclusiva para consulta do portfólio de cnpjs da
+          Sociedade Brasileira Caminho de Damasco.
+        </p>
+
+        <div className="login-stats">
+          <div className="login-stat">
+            <div className="num">{cnpjs.length}</div>
+            <div className="lbl">Cnpjs cadastrados</div>
           </div>
-        </div>
-
-        <div>
-          <h1 className="login-headline">
-            Consulta de cnpjs,
-            <br />
-            <span className="highlight">por SBCDATA.</span>
-          </h1>
-          <p className="login-sub">
-            Plataforma exclusiva para consulta do portfólio de cnpjs da
-            Sociedade Brasileira Caminho de Damasco.
-          </p>
-
-          <div className="login-stats">
-            <div className="login-stat">
-              <div className="num">{cnpjs.length}</div>
-              <div className="lbl">Cnpjs cadastrados</div>
-            </div>
-            <div className="login-stat">
-              <div className="num">{totalEstados}</div>
-              <div className="lbl">Estados</div>
-            </div>
-            <div className="login-stat">
-              <div className="num">{totalMunicipios}</div>
-              <div className="lbl">Municípios</div>
-            </div>
+          <div className="login-stat">
+            <div className="num">{totalEstados}</div>
+            <div className="lbl">Estados</div>
+          </div>
+          <div className="login-stat">
+            <div className="num">{totalMunicipios}</div>
+            <div className="lbl">Municípios</div>
           </div>
         </div>
 

@@ -32,7 +32,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family:
-    'Inter Tight',
+    "Inter Tight",
     -apple-system,
     BlinkMacSystemFont,
     sans-serif;
@@ -52,7 +52,7 @@ body {
 }
 
 .mono {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 @keyframes fadeUp {
@@ -64,4 +64,15 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.watermark {
+  position: fixed;
+  bottom: 28px;
+  right: 32px;
+  width: 200px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
 }

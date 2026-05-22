@@ -7,6 +7,7 @@ import MunicipioScreen from "./components/MunicipioScreen";
 import CNPJScreen from "./components/CNPJScreen";
 import DetalheScreen from "./components/DetalheScreen";
 import cnpjs from "./data/cnpjs.json";
+import logoSemFundo from "./assets/logo-sem-fundo-sbcdata.png";
 
 const SESSION_KEY = "sbcd_auth";
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
@@ -81,7 +82,7 @@ export default function App() {
 
   return (
     <div className="app-shell">
-      <Header onLogout={logout} onSearch={buscarPorCnpj} />
+      <Header onLogout={logout} onSearch={buscarPorCnpj} step={state.step} />
       <div className="stage">
         <Crumbs state={state} onGo={goto} />
 
@@ -114,6 +115,8 @@ export default function App() {
           />
         )}
       </div>
+
+      <img src={logoSemFundo} alt="" className="watermark" aria-hidden="true" />
     </div>
   );
 }
