@@ -1,0 +1,67 @@
+:root {
+  --blue-50: #f0f6fc;
+  --blue-100: #dceaf7;
+  --blue-200: #b8d4ef;
+  --blue-300: #7ab0e0;
+  --blue-400: #4a8ccc;
+  --blue-500: #2a6cb0;
+  --blue-600: #1e5392;
+  --blue-700: #1a4275;
+  --blue-800: #133158;
+  --blue-900: #0a1f3d;
+  --blue-950: #061427;
+
+  --bg: #f5f9fd;
+  --surface: #ffffff;
+  --ink: #0a1f3d;
+  --ink-soft: #2d4565;
+  --ink-muted: #6a7a92;
+  --line: rgba(10, 31, 61, 0.08);
+  --line-strong: rgba(10, 31, 61, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family:
+    'Inter Tight',
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.005em;
+}
+
+body {
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--blue-700);
+  color: white;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

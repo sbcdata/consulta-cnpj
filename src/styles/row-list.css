@@ -1,0 +1,65 @@
+/* Row list (municípios / cnpjs) */
+.row-list {
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.row-item {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.row-item:last-child {
+  border-bottom: none;
+}
+.row-item:hover {
+  background: var(--blue-50);
+}
+.row-item:hover .row-arrow {
+  color: var(--blue-700);
+  transform: translateX(4px);
+}
+.row-item:hover .row-num {
+  background: var(--blue-700);
+  color: white;
+}
+
+.row-num {
+  width: 36px;
+  height: 36px;
+  background: var(--blue-50);
+  color: var(--blue-700);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+.row-main .name {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+}
+.row-main .meta {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-top: 4px;
+}
+.row-main .meta.mono {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+}
+.row-arrow {
+  color: var(--blue-400);
+  font-size: 20px;
+  transition: all 0.2s;
+}

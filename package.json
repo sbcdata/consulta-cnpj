@@ -1,0 +1,22 @@
+{
+  "name": "sbcdata-consultor-cnpj",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Plataforma de consulta de CNPJs da Sociedade Brasileira Caminho de Damasco",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.1"
+  }
+}

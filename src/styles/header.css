@@ -1,0 +1,86 @@
+/* ========= MAIN APP ========= */
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  background: var(--blue-900);
+  color: white;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--blue-800);
+}
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.header-brand .logo-square {
+  width: 32px;
+  height: 32px;
+  background: var(--blue-300);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-900);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+}
+.header-brand .name {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+.header-brand .name .accent {
+  color: var(--blue-300);
+}
+.header-brand .divider {
+  width: 1px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.18);
+}
+.header-brand .tag {
+  font-size: 12px;
+  color: var(--blue-200);
+  font-weight: 500;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-org {
+  font-size: 12px;
+  color: var(--blue-300);
+  font-weight: 500;
+}
+@media (max-width: 700px) {
+  .header-org {
+    display: none;
+  }
+}
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-ghost:hover {
+  background: var(--blue-700);
+  border-color: var(--blue-500);
+}
