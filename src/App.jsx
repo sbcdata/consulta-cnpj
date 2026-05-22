@@ -28,7 +28,7 @@ function loadSession() {
 }
 
 const ESTADO_INICIAL = {
-  step: "login",
+  step: "uf",
   uf: null,
   municipio: null,
   cnpj: null,
