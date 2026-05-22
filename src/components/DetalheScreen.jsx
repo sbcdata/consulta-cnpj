@@ -17,7 +17,7 @@ export default function DetalheScreen({ cnpj, onNova, onVoltar }) {
     <>
       <StepHead
         num={4}
-        title="Dados da cnpj"
+        title="Dados do CNPJ"
         desc="Informações completas do CNPJ selecionado em nossa base."
       />
 

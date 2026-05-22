@@ -21,7 +21,7 @@ export default function MunicipioScreen({ uf, onSelect }) {
         title="Selecione o município"
         desc={`${municipios.length} ${
           municipios.length === 1 ? "município" : "municípios"
-        } com cnpjs em ${UF_NAMES[uf] || uf}.`}
+        } com CNPJs em ${UF_NAMES[uf] || uf}.`}
       />
       <div className="row-list">
         {municipios.map(([m, count], i) => (
@@ -35,7 +35,7 @@ export default function MunicipioScreen({ uf, onSelect }) {
             <div className="row-main">
               <div className="name">{m}</div>
               <div className="meta">
-                {count} {count === 1 ? "cnpj cadastrado" : "cnpjs cadastrados"}
+                {count} {count === 1 ? "CNPJ cadastrado" : "CNPJs cadastrados"}
               </div>
             </div>
             <div className="row-arrow">→</div>

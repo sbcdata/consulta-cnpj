@@ -17,7 +17,7 @@ export default function UfScreen({ onSelect }) {
       <StepHead
         num={1}
         title="Selecione o estado"
-        desc={`${ufs.length} unidades federativas com cnpjs cadastrados em nossa base.`}
+        desc={`${ufs.length} unidades federativas com CNPJs cadastrados em nossa base.`}
       />
       <div className="uf-grid">
         {ufs.map(([uf, count], i) => (
@@ -31,7 +31,7 @@ export default function UfScreen({ onSelect }) {
             <div className="uf-name">{UF_NAMES[uf] || uf}</div>
             <div className="uf-count">
               <span>
-                {count} {count === 1 ? "cnpj" : "cnpjs"}
+                {count} {count === 1 ? "CNPJ" : "CNPJs"}
               </span>
               <span className="arrow">→</span>
             </div>

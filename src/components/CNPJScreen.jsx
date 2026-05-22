@@ -21,9 +21,9 @@ export default function CNPJScreen({ uf, municipio, onSelect }) {
     <>
       <StepHead
         num={3}
-        title="Selecione a cnpj"
+        title="Selecione o CNPJ"
         desc={`${lista.length} ${
-          lista.length === 1 ? "cnpj disponível" : "cnpjs disponíveis"
+          lista.length === 1 ? "CNPJ disponível" : "CNPJs disponíveis"
         } em ${municipio}, ${uf}.`}
       />
       <div className="row-list">

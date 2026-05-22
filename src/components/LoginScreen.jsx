@@ -23,19 +23,19 @@ export default function LoginScreen({ onLogin }) {
     <div className="login-shell">
       <div className="login-left">
         <h1 className="login-headline">
-          Consulta de cnpjs,
+          Consulta de CNPJs,
           <br />
           <span className="highlight">por SBCDATA.</span>
         </h1>
         <p className="login-sub">
-          Plataforma exclusiva para consulta do portfólio de cnpjs da
+          Plataforma exclusiva para consulta do portfólio de CNPJs da
           Sociedade Brasileira Caminho de Damasco.
         </p>
 
         <div className="login-stats">
           <div className="login-stat">
             <div className="num">{cnpjs.length}</div>
-            <div className="lbl">Cnpjs cadastrados</div>
+            <div className="lbl">CNPJs cadastrados</div>
           </div>
           <div className="login-stat">
             <div className="num">{totalEstados}</div>
@@ -57,7 +57,7 @@ export default function LoginScreen({ onLogin }) {
         <div className="login-form-wrap">
           <h2 className="login-title">Acessar plataforma</h2>
           <p className="login-desc">
-            Insira sua senha de acesso para consultar a base de cnpjs.
+            Insira sua senha de acesso para consultar a base de CNPJs.
           </p>
 
           <label className="field-label">Senha</label>

@@ -72,7 +72,14 @@ body {
   right: 32px;
   width: 200px;
   height: auto;
+  opacity: 0.85;
   pointer-events: none;
   user-select: none;
   z-index: 0;
+}
+@media (max-width: 600px) {
+  .watermark {
+    width: 130px;
+    opacity: 0.7;
+  }
 }
