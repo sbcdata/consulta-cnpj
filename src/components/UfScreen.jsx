@@ -17,7 +17,7 @@ export default function UfScreen({ onSelect }) {
       <StepHead
         num={1}
         title="Selecione o estado"
-        desc={`${ufs.length} unidades federativas com cnpjs cadastradas em nossa base.`}
+        desc={`${ufs.length} unidades federativas com cnpjs cadastrados em nossa base.`}
       />
       <div className="uf-grid">
         {ufs.map(([uf, count], i) => (

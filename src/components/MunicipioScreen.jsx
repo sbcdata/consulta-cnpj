@@ -35,7 +35,7 @@ export default function MunicipioScreen({ uf, onSelect }) {
             <div className="row-main">
               <div className="name">{m}</div>
               <div className="meta">
-                {count} {count === 1 ? "cnpj cadastrada" : "cnpjs cadastradas"}
+                {count} {count === 1 ? "cnpj cadastrado" : "cnpjs cadastrados"}
               </div>
             </div>
             <div className="row-arrow">→</div>
