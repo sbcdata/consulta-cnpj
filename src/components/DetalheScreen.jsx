@@ -1,11 +1,28 @@
 import { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import StepHead from "./StepHead";
 import { UF_NAMES } from "../data/ufNames";
 import ExportDialog from "./ExportDialog";
+import cnpjs from "../data/cnpjs.json";
 
-export default function DetalheScreen({ cnpj, onNova, onVoltar }) {
+export default function DetalheScreen() {
+  const { uf, municipio, cnpjId } = useParams();
+  const navigate = useNavigate();
   const [copied, setCopied] = useState(false);
   const [exportOpen, setExportOpen] = useState(false);
+
+  const cnpj = cnpjs.find((e) => e.cnpj.replace(/\D/g, "") === cnpjId);
+
+  if (!cnpj) {
+    return (
+      <div style={{ padding: "2rem", textAlign: "center" }}>
+        <p>CNPJ não encontrado.</p>
+        <button className="btn-detail solid" onClick={() => navigate("/")}>
+          Voltar ao início
+        </button>
+      </div>
+    );
+  }
 
   const copiar = () => {
     navigator.clipboard?.writeText(cnpj.cnpj);
@@ -30,7 +47,7 @@ export default function DetalheScreen({ cnpj, onNova, onVoltar }) {
           <div className="detail-cnpj">{cnpj.cnpj}</div>
 
           <div className="detail-actions">
-            <button className="btn-detail solid" onClick={onNova}>
+            <button className="btn-detail solid" onClick={() => navigate("/")}>
               <span>Nova consulta</span>
               <span className="arrow">→</span>
             </button>
@@ -38,7 +55,12 @@ export default function DetalheScreen({ cnpj, onNova, onVoltar }) {
               <span>{copied ? "CNPJ copiado" : "Copiar CNPJ"}</span>
               <span className="arrow">{copied ? "✓" : "⎘"}</span>
             </button>
-            <button className="btn-detail outline" onClick={onVoltar}>
+            <button
+              className="btn-detail outline"
+              onClick={() =>
+                navigate(`/${uf}/${encodeURIComponent(municipio)}`)
+              }
+            >
               <span>Voltar à lista</span>
               <span className="arrow">←</span>
             </button>

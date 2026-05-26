@@ -1,9 +1,13 @@
 import { useMemo } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import StepHead from "./StepHead";
 import cnpjs from "../data/cnpjs.json";
 import { UF_NAMES } from "../data/ufNames";
 
-export default function MunicipioScreen({ uf, onSelect }) {
+export default function MunicipioScreen() {
+  const { uf } = useParams();
+  const navigate = useNavigate();
+
   const municipios = useMemo(() => {
     const map = {};
     cnpjs
@@ -28,7 +32,7 @@ export default function MunicipioScreen({ uf, onSelect }) {
           <div
             key={m}
             className="row-item"
-            onClick={() => onSelect(m)}
+            onClick={() => navigate(`/${uf}/${encodeURIComponent(m)}`)}
             style={{ animation: `fadeUp 0.4s ${i * 0.05}s both` }}
           >
             <div className="row-num">{String(i + 1).padStart(2, "0")}</div>

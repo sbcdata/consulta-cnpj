@@ -1,13 +1,30 @@
 import { Fragment } from "react";
+import { useNavigate, useLocation, useParams } from "react-router-dom";
+import cnpjs from "../data/cnpjs.json";
 
-export default function Crumbs({ state, onGo }) {
-  const crumbs = [{ label: "Estados", step: "uf" }];
-  if (state.step === "todos") {
-    crumbs.push({ label: "Todos os CNPJs", step: "todos" });
+export default function Crumbs() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const params = useParams();
+
+  const segments = location.pathname.split("/").filter(Boolean);
+  const crumbs = [{ label: "Estados", path: "/" }];
+
+  if (segments[0] === "todos") {
+    crumbs.push({ label: "Todos os CNPJs", path: "/todos" });
   } else {
-    if (state.uf) crumbs.push({ label: state.uf, step: "municipio" });
-    if (state.municipio) crumbs.push({ label: state.municipio, step: "cnpj" });
-    if (state.cnpj) crumbs.push({ label: state.cnpj.nome, step: "detalhe" });
+    const { uf, municipio, cnpjId } = params;
+    if (uf) crumbs.push({ label: uf, path: `/${uf}` });
+    if (municipio) {
+      crumbs.push({
+        label: municipio,
+        path: `/${uf}/${encodeURIComponent(municipio)}`,
+      });
+    }
+    if (cnpjId) {
+      const entry = cnpjs.find((e) => e.cnpj.replace(/\D/g, "") === cnpjId);
+      crumbs.push({ label: entry?.nome || cnpjId, path: null });
+    }
   }
 
   return (
@@ -18,7 +35,7 @@ export default function Crumbs({ state, onGo }) {
           <Fragment key={i}>
             <span
               className={`crumb-link ${isLast ? "active" : ""}`}
-              onClick={() => !isLast && onGo(c.step)}
+              onClick={() => !isLast && c.path && navigate(c.path)}
             >
               {c.label}
             </span>

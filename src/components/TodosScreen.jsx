@@ -1,8 +1,10 @@
 import { useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import cnpjs from "../data/cnpjs.json";
 import ExportDialog from "./ExportDialog";
 
-export default function TodosScreen({ onSelect, onVoltar }) {
+export default function TodosScreen() {
+  const navigate = useNavigate();
   const [busca, setBusca] = useState("");
   const [copiado, setCopiado] = useState(null);
   const [exportOpen, setExportOpen] = useState(false);
@@ -27,8 +29,6 @@ export default function TodosScreen({ onSelect, onVoltar }) {
     setTimeout(() => setCopiado(null), 2000);
   };
 
-  const exportTitle = "CNPJs_SBCD";
-
   return (
     <>
       <div className="stage-head">
@@ -45,7 +45,7 @@ export default function TodosScreen({ onSelect, onVoltar }) {
       </div>
 
       <div className="todos-bar">
-        <button className="todos-back-btn" onClick={onVoltar}>← Voltar</button>
+        <button className="todos-back-btn" onClick={() => navigate("/")}>← Voltar</button>
         <input
           className="todos-input"
           type="text"
@@ -76,7 +76,11 @@ export default function TodosScreen({ onSelect, onVoltar }) {
           <div
             key={e.cnpj}
             className="row-item"
-            onClick={() => onSelect(e)}
+            onClick={() =>
+              navigate(
+                `/${e.uf}/${encodeURIComponent(e.municipio)}/${e.cnpj.replace(/\D/g, "")}`
+              )
+            }
             style={{ animation: `fadeUp 0.3s ${Math.min(i, 15) * 0.03}s both` }}
           >
             <div className="row-num">{String(i + 1).padStart(2, "0")}</div>
@@ -99,7 +103,7 @@ export default function TodosScreen({ onSelect, onVoltar }) {
 
       <ExportDialog
         data={lista}
-        title={exportTitle}
+        title="CNPJs_SBCD"
         open={exportOpen}
         onClose={() => setExportOpen(false)}
       />

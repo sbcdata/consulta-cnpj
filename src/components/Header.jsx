@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import cnpjs from "../data/cnpjs.json";
 import logoBranco from "../assets/logo-sbcd-branco.png";
-
-const PROGRESS = { uf: 25, municipio: 50, cnpj: 75, detalhe: 100 };
 
 function maskCnpj(val) {
   const d = val.replace(/\D/g, "").slice(0, 14);
@@ -13,7 +13,15 @@ function maskCnpj(val) {
   return `${d.slice(0, 2)}.${d.slice(2, 5)}.${d.slice(5, 8)}/${d.slice(8, 12)}-${d.slice(12)}`;
 }
 
-export default function Header({ onLogout, onSearch, step }) {
+function getProgress(pathname) {
+  const segments = pathname.split("/").filter(Boolean);
+  if (segments[0] === "todos") return 100;
+  return { 0: 25, 1: 50, 2: 75, 3: 100 }[segments.length] ?? 25;
+}
+
+export default function Header() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [query, setQuery] = useState("");
   const [erro, setErro] = useState(false);
   const [mobileSearch, setMobileSearch] = useState(false);
@@ -25,16 +33,21 @@ export default function Header({ onLogout, onSearch, step }) {
 
   const handleSearch = () => {
     if (!query.trim()) return;
-    const found = onSearch(query);
-    if (found) {
+    const normalizado = query.replace(/\D/g, "");
+    const encontrado = cnpjs.find((e) => e.cnpj.replace(/\D/g, "") === normalizado);
+    if (encontrado) {
       setQuery("");
       setMobileSearch(false);
+      setErro(false);
+      navigate(
+        `/${encontrado.uf}/${encodeURIComponent(encontrado.municipio)}/${encontrado.cnpj.replace(/\D/g, "")}`
+      );
     } else {
       setErro(true);
     }
   };
 
-  const progress = PROGRESS[step] || 25;
+  const progress = getProgress(location.pathname);
 
   return (
     <div className="header-wrap">
@@ -78,9 +91,6 @@ export default function Header({ onLogout, onSearch, step }) {
             <div className="tag">Consultor de CNPJs</div>
           </div>
 
-          <button className="btn-ghost" onClick={onLogout}>
-            Sair
-          </button>
         </div>
       </div>
 

@@ -1,8 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { HashRouter } from 'react-router-dom';
 import App from './App.jsx';
 
-// Estilos globais
 import './styles/index.css';
 import './styles/login.css';
 import './styles/header.css';
@@ -14,6 +14,8 @@ import './styles/dialog.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </StrictMode>
 );

@@ -1,9 +1,12 @@
 import { useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import StepHead from "./StepHead";
 import cnpjs from "../data/cnpjs.json";
 import { UF_NAMES } from "../data/ufNames";
 
-export default function UfScreen({ onSelect, onTodos }) {
+export default function UfScreen() {
+  const navigate = useNavigate();
+
   const ufs = useMemo(() => {
     const map = {};
     cnpjs.forEach((e) => {
@@ -21,7 +24,7 @@ export default function UfScreen({ onSelect, onTodos }) {
       />
       <div
         className="todos-all-card"
-        onClick={onTodos}
+        onClick={() => navigate("/todos")}
         style={{ animation: "fadeUp 0.4s both" }}
       >
         <div className="todos-all-icon">≡</div>
@@ -36,7 +39,7 @@ export default function UfScreen({ onSelect, onTodos }) {
           <div
             key={uf}
             className="uf-card"
-            onClick={() => onSelect(uf)}
+            onClick={() => navigate(`/${uf}`)}
             style={{ animation: `fadeUp 0.4s ${i * 0.04}s both` }}
           >
             <div className="uf-code">{uf}</div>

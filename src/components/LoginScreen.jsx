@@ -1,16 +1,21 @@
 import { useState } from "react";
+import { useNavigate, Navigate } from "react-router-dom";
 import { SENHA } from "../config/auth";
+import { loadSession, saveSession } from "../config/session";
 import cnpjs from "../data/cnpjs.json";
-import logoSemFundo from "../assets/logo-sem-fundo-sbcdata.png";
 
-export default function LoginScreen({ onLogin }) {
+export default function LoginScreen() {
+  const navigate = useNavigate();
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");
 
+  if (loadSession()) return <Navigate to="/" replace />;
+
   const tentar = () => {
     if (senha === SENHA) {
+      saveSession();
       setErro("");
-      onLogin();
+      navigate("/");
     } else {
       setErro("Senha incorreta. Tente novamente.");
     }
