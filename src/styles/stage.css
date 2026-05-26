@@ -44,21 +44,23 @@
 }
 .ios-hint {
   position: absolute;
-  top: calc(100% + 8px);
+  bottom: calc(100% + 8px);
   right: 0;
   background: var(--ink);
   color: white;
   font-size: 12.5px;
-  line-height: 1.5;
+  line-height: 1.6;
   padding: 10px 14px;
   border-radius: 10px;
-  white-space: nowrap;
+  width: max-content;
+  max-width: min(280px, calc(100vw - 32px));
+  white-space: normal;
   z-index: 20;
   box-shadow: 0 4px 16px rgba(0,0,0,0.18);
 }
 .ios-hint-arrow {
   position: absolute;
-  top: -5px;
+  bottom: -5px;
   right: 18px;
   width: 10px;
   height: 10px;
