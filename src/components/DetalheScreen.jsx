@@ -44,7 +44,10 @@ export default function DetalheScreen() {
         <div className="detail-hero">
           <div className="detail-eyebrow">CNPJ consultada</div>
           <h2 className="detail-name">{cnpj.nome}</h2>
-          <div className="detail-cnpj">{cnpj.cnpj}</div>
+          <div className="detail-cnpj clickable-cnpj" onClick={copiar} title="Clique para copiar">
+            {cnpj.cnpj}
+            <span className="cnpj-copy-hint">{copied ? " ✓ copiado" : " ⎘"}</span>
+          </div>
 
           <div className="detail-actions">
             <button className="btn-detail solid" onClick={() => navigate("/")}>
@@ -78,7 +81,10 @@ export default function DetalheScreen() {
           </div>
           <div className="field-row">
             <div className="k">CNPJ</div>
-            <div className="v mono-v">{cnpj.cnpj}</div>
+            <div className="v mono-v clickable-cnpj" onClick={copiar} title="Clique para copiar">
+              {cnpj.cnpj}
+              <span className="cnpj-copy-hint">{copied ? " ✓ copiado" : " ⎘"}</span>
+            </div>
           </div>
           <div className="field-row">
             <div className="k">Estado</div>

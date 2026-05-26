@@ -44,7 +44,13 @@ export default function CNPJScreen() {
             <div className="row-num">{String(i + 1).padStart(2, "0")}</div>
             <div className="row-main">
               <div className="name">{entry.nome}</div>
-              <div className="meta mono">CNPJ {entry.cnpj}</div>
+              <div
+                className="meta mono cnpj-copy-inline"
+                onClick={(ev) => copiar(ev, entry)}
+                title="Clique para copiar"
+              >
+                CNPJ {entry.cnpj}
+              </div>
             </div>
             <button
               className={`row-copy${copiado === entry.cnpj ? " copied" : ""}`}
@@ -57,6 +63,13 @@ export default function CNPJScreen() {
           </div>
         ))}
       </div>
+
+      {copiado && (
+        <div className="copied-toast">
+          <span className="check">✓</span>
+          CNPJ copiado
+        </div>
+      )}
     </>
   );
 }

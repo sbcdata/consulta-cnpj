@@ -5,6 +5,68 @@
   width: 100%;
 }
 
+.crumbs-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.crumbs-bar .crumbs {
+  margin-bottom: 0;
+}
+
+/* ---- Install button ---- */
+.install-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+.install-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  color: var(--ink-muted);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.install-btn:hover {
+  border-color: var(--blue-400);
+  color: var(--blue-600);
+  background: var(--blue-50);
+}
+.ios-hint {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--ink);
+  color: white;
+  font-size: 12.5px;
+  line-height: 1.5;
+  padding: 10px 14px;
+  border-radius: 10px;
+  white-space: nowrap;
+  z-index: 20;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.ios-hint-arrow {
+  position: absolute;
+  top: -5px;
+  right: 18px;
+  width: 10px;
+  height: 10px;
+  background: var(--ink);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
 .crumbs {
   display: flex;
   align-items: center;
@@ -90,7 +152,11 @@
   .stage-head {
     margin-bottom: 24px;
   }
-  .crumbs {
+  .crumbs-bar {
     margin-bottom: 20px;
+  }
+  .install-btn {
+    font-size: 11px;
+    padding: 5px 10px;
   }
 }

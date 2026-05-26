@@ -52,7 +52,7 @@ export default function Header() {
   return (
     <div className="header-wrap">
       <div className="main-header">
-        <div className="header-logo-left">
+        <div className="header-logo-left" onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
           <img src={logoBranco} alt="SBCD" className="logo-left-img" />
         </div>
 

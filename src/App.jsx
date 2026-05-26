@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate, Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Crumbs from "./components/Crumbs";
+import InstallButton from "./components/InstallButton";
 import UfScreen from "./components/UfScreen";
 import MunicipioScreen from "./components/MunicipioScreen";
 import CNPJScreen from "./components/CNPJScreen";
@@ -13,7 +14,10 @@ function Layout() {
     <div className="app-shell">
       <Header />
       <div className="stage">
-        <Crumbs />
+        <div className="crumbs-bar">
+          <Crumbs />
+          <InstallButton />
+        </div>
         <Outlet />
       </div>
       <img src={logoSemFundo} alt="" className="watermark" aria-hidden="true" />

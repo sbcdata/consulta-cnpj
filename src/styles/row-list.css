@@ -106,6 +106,16 @@
   background: #f0fdf4;
 }
 
+/* ---- CNPJ inline copy ---- */
+.cnpj-copy-inline {
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.cnpj-copy-inline:hover {
+  color: var(--blue-600);
+  text-decoration: underline dotted;
+}
+
 /* ---- All CNPJs card ---- */
 .todos-all-card {
   display: flex;

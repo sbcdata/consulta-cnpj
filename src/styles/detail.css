@@ -54,6 +54,24 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+.clickable-cnpj {
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.clickable-cnpj:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+.cnpj-copy-hint {
+  opacity: 0.5;
+  font-size: 0.85em;
+  margin-left: 4px;
+  transition: opacity 0.15s;
+}
+.clickable-cnpj:hover .cnpj-copy-hint {
+  opacity: 0.9;
+}
+
 .detail-actions {
   display: flex;
   flex-direction: column;
