@@ -80,6 +80,14 @@
     "contrato": ""
   },
   {
+    "nome": "CEO III PICOS",
+    "cnpj": "48.211.585/0070-47",
+    "uf": "PI",
+    "municipio": "Picos",
+    "endereco": "Rua Francisco da Costa Araújo, 29 - Centro CEP: 64600-076 - Picos/PI",
+    "contrato": ""
+  },
+  {
     "nome": "CER II SÃO JOÃO DO PIAUÍ",
     "cnpj": "48.211.585/0044-55",
     "uf": "PI",
@@ -149,6 +157,14 @@
     "uf": "PI",
     "municipio": "Luzilândia",
     "endereco": "Rua João Carvalho, S/N - Itacare - CEP: 64160-000 - Luzilândia/PI",
+    "contrato": ""
+  },
+  {
+    "nome": "HOSPITAL ESTADUAL JOSÉ FURTADO DE MENDONÇA (SÃO MIGUEL TAPUIO)",
+    "cnpj": "48.211.585/0071-28",
+    "uf": "PI",
+    "municipio": "São Miguel Tapuio",
+    "endereco": "Rua Coletor José Araújo, S/N° - Centro - CEP: 64330-000 - São Miguel Tapuio/PI",
     "contrato": ""
   },
   {
