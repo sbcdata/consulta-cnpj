@@ -1,9 +1,11 @@
 import { useMemo, useState } from "react";
 import cnpjs from "../data/cnpjs.json";
+import ExportDialog from "./ExportDialog";
 
 export default function TodosScreen({ onSelect, onVoltar }) {
   const [busca, setBusca] = useState("");
   const [copiado, setCopiado] = useState(null);
+  const [exportOpen, setExportOpen] = useState(false);
 
   const lista = useMemo(() => {
     const q = busca.trim().toLowerCase();
@@ -24,6 +26,8 @@ export default function TodosScreen({ onSelect, onVoltar }) {
     setCopiado(entry.cnpj);
     setTimeout(() => setCopiado(null), 2000);
   };
+
+  const exportTitle = "CNPJs_SBCD";
 
   return (
     <>
@@ -55,6 +59,13 @@ export default function TodosScreen({ onSelect, onVoltar }) {
             {lista.length} resultado{lista.length !== 1 ? "s" : ""}
           </span>
         )}
+        <button
+          className="todos-export-btn"
+          onClick={() => setExportOpen(true)}
+          disabled={lista.length === 0}
+        >
+          Exportar
+        </button>
       </div>
 
       <div className="row-list">
@@ -85,6 +96,13 @@ export default function TodosScreen({ onSelect, onVoltar }) {
           </div>
         ))}
       </div>
+
+      <ExportDialog
+        data={lista}
+        title={exportTitle}
+        open={exportOpen}
+        onClose={() => setExportOpen(false)}
+      />
     </>
   );
 }

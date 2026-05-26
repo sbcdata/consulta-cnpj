@@ -1,9 +1,11 @@
 import { useState } from "react";
 import StepHead from "./StepHead";
 import { UF_NAMES } from "../data/ufNames";
+import ExportDialog from "./ExportDialog";
 
 export default function DetalheScreen({ cnpj, onNova, onVoltar }) {
   const [copied, setCopied] = useState(false);
+  const [exportOpen, setExportOpen] = useState(false);
 
   const copiar = () => {
     navigator.clipboard?.writeText(cnpj.cnpj);
@@ -39,6 +41,10 @@ export default function DetalheScreen({ cnpj, onNova, onVoltar }) {
             <button className="btn-detail outline" onClick={onVoltar}>
               <span>Voltar à lista</span>
               <span className="arrow">←</span>
+            </button>
+            <button className="btn-detail outline" onClick={() => setExportOpen(true)}>
+              <span>Exportar</span>
+              <span className="arrow">↓</span>
             </button>
           </div>
         </div>
@@ -82,6 +88,13 @@ export default function DetalheScreen({ cnpj, onNova, onVoltar }) {
           CNPJ copiado
         </div>
       )}
+
+      <ExportDialog
+        data={[cnpj]}
+        title={`CNPJ_${cnpj.cnpj.replace(/\D/g, "")}`}
+        open={exportOpen}
+        onClose={() => setExportOpen(false)}
+      />
     </>
   );
 }

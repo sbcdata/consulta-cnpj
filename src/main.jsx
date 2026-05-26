@@ -10,6 +10,7 @@ import './styles/stage.css';
 import './styles/uf.css';
 import './styles/row-list.css';
 import './styles/detail.css';
+import './styles/dialog.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

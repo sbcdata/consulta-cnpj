@@ -5,7 +5,9 @@
       "Bash(curl -s http://localhost:5173)",
       "Bash(curl -s http://localhost:5173/consulta-cnpj/)",
       "Bash(node -e \"const fs=require\\('fs'\\); const data=JSON.parse\\(fs.readFileSync\\('src/data/cnpjs.json','utf8'\\)\\); console.log\\(data.length\\);\")",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(npm install *)",
+      "Bash(del *)"
     ]
   }
 }
