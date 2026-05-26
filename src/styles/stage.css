@@ -79,3 +79,18 @@
   line-height: 1.5;
   max-width: 600px;
 }
+
+@media (max-width: 600px) {
+  .stage {
+    padding: 24px 16px 60px;
+  }
+  .stage-titles h1 {
+    font-size: 26px;
+  }
+  .stage-head {
+    margin-bottom: 24px;
+  }
+  .crumbs {
+    margin-bottom: 20px;
+  }
+}

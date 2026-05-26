@@ -6,6 +6,7 @@ import UfScreen from "./components/UfScreen";
 import MunicipioScreen from "./components/MunicipioScreen";
 import CNPJScreen from "./components/CNPJScreen";
 import DetalheScreen from "./components/DetalheScreen";
+import TodosScreen from "./components/TodosScreen";
 import cnpjs from "./data/cnpjs.json";
 import logoSemFundo from "./assets/logo-sem-fundo-sbcdata.png";
 
@@ -42,6 +43,8 @@ export default function App() {
   const goto = (step) => {
     if (step === "uf") {
       setState({ ...state, step: "uf", uf: null, municipio: null, cnpj: null });
+    } else if (step === "todos") {
+      setState({ ...state, step: "todos", uf: null, municipio: null, cnpj: null });
     } else if (step === "municipio") {
       setState({ ...state, step: "municipio", municipio: null, cnpj: null });
     } else if (step === "cnpj") {
@@ -89,6 +92,16 @@ export default function App() {
         {state.step === "uf" && (
           <UfScreen
             onSelect={(uf) => setState({ ...state, step: "municipio", uf })}
+            onTodos={() => setState({ ...state, step: "todos", uf: null, municipio: null, cnpj: null })}
+          />
+        )}
+
+        {state.step === "todos" && (
+          <TodosScreen
+            onSelect={(e) =>
+              setState({ step: "detalhe", uf: e.uf, municipio: e.municipio, cnpj: e })
+            }
+            onVoltar={() => setState({ ...ESTADO_INICIAL, step: "uf" })}
           />
         )}
 

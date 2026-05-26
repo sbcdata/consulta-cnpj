@@ -3,7 +3,7 @@ import StepHead from "./StepHead";
 import cnpjs from "../data/cnpjs.json";
 import { UF_NAMES } from "../data/ufNames";
 
-export default function UfScreen({ onSelect }) {
+export default function UfScreen({ onSelect, onTodos }) {
   const ufs = useMemo(() => {
     const map = {};
     cnpjs.forEach((e) => {
@@ -19,6 +19,18 @@ export default function UfScreen({ onSelect }) {
         title="Selecione o estado"
         desc={`${ufs.length} unidades federativas com CNPJs cadastrados em nossa base.`}
       />
+      <div
+        className="todos-all-card"
+        onClick={onTodos}
+        style={{ animation: "fadeUp 0.4s both" }}
+      >
+        <div className="todos-all-icon">≡</div>
+        <div className="row-main">
+          <div className="name">Ver todos os CNPJs</div>
+          <div className="meta">{cnpjs.length} CNPJs em todos os estados</div>
+        </div>
+        <div className="row-arrow">→</div>
+      </div>
       <div className="uf-grid">
         {ufs.map(([uf, count], i) => (
           <div

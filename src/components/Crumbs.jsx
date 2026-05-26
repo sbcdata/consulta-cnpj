@@ -2,9 +2,13 @@ import { Fragment } from "react";
 
 export default function Crumbs({ state, onGo }) {
   const crumbs = [{ label: "Estados", step: "uf" }];
-  if (state.uf) crumbs.push({ label: state.uf, step: "municipio" });
-  if (state.municipio) crumbs.push({ label: state.municipio, step: "cnpj" });
-  if (state.cnpj) crumbs.push({ label: state.cnpj.nome, step: "detalhe" });
+  if (state.step === "todos") {
+    crumbs.push({ label: "Todos os CNPJs", step: "todos" });
+  } else {
+    if (state.uf) crumbs.push({ label: state.uf, step: "municipio" });
+    if (state.municipio) crumbs.push({ label: state.municipio, step: "cnpj" });
+    if (state.cnpj) crumbs.push({ label: state.cnpj.nome, step: "detalhe" });
+  }
 
   return (
     <div className="crumbs">

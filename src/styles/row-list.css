@@ -105,3 +105,128 @@
   color: #16a34a;
   background: #f0fdf4;
 }
+
+/* ---- All CNPJs card ---- */
+.todos-all-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  margin-bottom: 20px;
+  background: var(--blue-900);
+  border-radius: 12px;
+  border: 1px solid var(--blue-700);
+  cursor: pointer;
+  transition: background 0.2s;
+  color: white;
+}
+.todos-all-card:hover {
+  background: var(--blue-800);
+}
+.todos-all-card .row-main .name {
+  color: white;
+  font-size: 15px;
+}
+.todos-all-card .row-main .meta {
+  color: var(--blue-300);
+}
+.todos-all-card .row-arrow {
+  color: var(--blue-300);
+  margin-left: auto;
+}
+.todos-all-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--blue-700);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--blue-200);
+  flex-shrink: 0;
+}
+
+/* ---- Todos search bar ---- */
+.todos-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.todos-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--surface);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.todos-input:focus {
+  border-color: var(--blue-400);
+  box-shadow: 0 0 0 3px rgba(74, 140, 204, 0.12);
+}
+.todos-input::placeholder {
+  color: var(--ink-muted);
+}
+.todos-count {
+  font-size: 13px;
+  color: var(--ink-muted);
+  white-space: nowrap;
+}
+.todos-empty {
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--ink-muted);
+  font-size: 14px;
+}
+
+.todos-back-btn {
+  background: none;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+.todos-back-btn:hover {
+  border-color: var(--blue-400);
+  color: var(--blue-600);
+  background: var(--blue-50);
+}
+
+/* ---- Mobile responsive ---- */
+@media (max-width: 480px) {
+  .row-item {
+    grid-template-columns: 30px 1fr auto auto;
+    gap: 10px;
+    padding: 14px 14px;
+  }
+  .row-num {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+    border-radius: 6px;
+  }
+  .row-main .name {
+    font-size: 14px;
+  }
+  .row-main .meta.mono {
+    font-size: 11px;
+    overflow-wrap: anywhere;
+  }
+  .todos-all-card {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+}

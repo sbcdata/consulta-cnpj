@@ -8,12 +8,12 @@
     "contrato": "SEI 024.00060476/2023-17"
   },
   {
-    "nome": "CENTRAL DE EXAMES CASTELO DO PIAUI",
-    "cnpj": "48.211.585/0069-03",
-    "uf": "PI",
-    "municipio": "Castelo do Piauí",
-    "endereco": "Rua Barão do Rio Branco, 480 - CEP: 64340-000 - Castelo do Piauí/PI",
-    "contrato": "CG: 37/2025"
+    "nome": "AME PROMISSÃO",
+    "cnpj": "48.211.585/0037-26",
+    "uf": "SP",
+    "municipio": "Promissão",
+    "endereco": "Av. Arthur Franco, 215 (Quadra Ant 210) - Centro - CEP: 16370-000 - Promissão/SP",
+    "contrato": "SEI 024.00060553/2023-39"
   },
   {
     "nome": "APS CUBATÃO",
@@ -24,36 +24,84 @@
     "contrato": "CG: ADM 004/2023"
   },
   {
-    "nome": "HMC CUBATÃO NOVO",
-    "cnpj": "48.211.585/0035-64",
-    "uf": "SP",
-    "municipio": "Cubatão",
-    "endereco": "Avenida Henry Borden, 21 - Vila Santa Rosa - CEP: 11515-000 - Cubatão/SP",
-    "contrato": "010/2023"
-  },
-  {
-    "nome": "HOSPITAL JOAO LUIZ DE MORAES - DERMEVAL LOBÃO",
-    "cnpj": "48.211.585/0050-01",
+    "nome": "CENTRAL DE EXAMES CASTELO DO PIAUI",
+    "cnpj": "48.211.585/0069-03",
     "uf": "PI",
-    "municipio": "Demerval Lobão",
-    "endereco": "Rua Francisco Carvalho de Melo, S/N - Centro - CEP: 64390-000 - Demerval Lobão/PI",
-    "contrato": ""
+    "municipio": "Castelo do Piauí",
+    "endereco": "Rua Barão do Rio Branco, 480 - CEP: 64340-000 - Castelo do Piauí/PI",
+    "contrato": "CG: 37/2025"
   },
   {
-    "nome": "HOSPITAL ESTADUAL DR JULIO HARTMAN HEJH",
-    "cnpj": "48.211.585/0055-08",
+    "nome": "CENTRAL DE EXAMES DE OEIRAS",
+    "cnpj": "48.211.585/0058-50",
     "uf": "PI",
-    "municipio": "Esperantina",
-    "endereco": "Praça Marechal Deodoro da Fonseca, 341 - Centro - CEP: 64180-000 - Esperantina/PI",
+    "municipio": "Oeiras",
+    "endereco": "Rua Conego Cardoso, 491 - Centro - CEP: 64500-000 - Oeiras/PI",
+    "contrato": "CG: 39/2025"
+  },
+  {
+    "nome": "CENTRAL DE EXAMES DE PICOS",
+    "cnpj": "48.211.585/0046-17",
+    "uf": "PI",
+    "municipio": "Picos",
+    "endereco": "Rua Francisco da Costa Araújo, 29 - Centro CEP: 64600-076 - Picos/PI",
+    "contrato": "CG:07/2024"
+  },
+  {
+    "nome": "CENTRAL DE EXAMES DE TERESINA",
+    "cnpj": "48.211.585/0066-60",
+    "uf": "PI",
+    "municipio": "Teresina",
+    "endereco": "Avenida Higino Cunha, 1552 - Ilhotas - CEP: 64014-220 - Teresina/PI",
+    "contrato": "CG: 38/2025"
+  },
+  {
+    "nome": "CENTRAL DE EXAMES DE URUÇUÍ",
+    "cnpj": "48.211.585/0060-75",
+    "uf": "PI",
+    "municipio": "Uruçuí",
+    "endereco": "Av Santos Dumont, S/N - Aeroporto - CEP: 64860-000 - Uruçuí - PI",
+    "contrato": "CG: 40/2025"
+  },
+  {
+    "nome": "CENTRAL DE EXAMES DE VALENÇA DO PIAUÍ",
+    "cnpj": "48.211.585/0056-99",
+    "uf": "PI",
+    "municipio": "Valença do Piauí",
+    "endereco": "Rua Gen Propécio de Castro, S/N - Centro - CEP:64300-000 - Valença do Piauí/PI",
+    "contrato": "CG: 25/2025"
+  },
+  {
+    "nome": "CENTRAL DE EXAMES SÃO RAIMUNDO NONATO",
+    "cnpj": "48.211.585/0062-37",
+    "uf": "PI",
+    "municipio": "São Raimundo Nonato",
+    "endereco": "Rua Elizeu Paes Landim, S/N - Aldeia - CEP: 64770-000 - São Raimundo Nonato/PI",
     "contrato": ""
   },
   {
-    "nome": "MATRIZ",
-    "cnpj": "48.211.585/0001-15",
+    "nome": "CER II SÃO JOÃO DO PIAUÍ",
+    "cnpj": "48.211.585/0044-55",
+    "uf": "PI",
+    "municipio": "São João do Piauí",
+    "endereco": "Rua Papagaio, 700 - Vila Betânia - CEP: 64760-000 - São João do Piaui-PI",
+    "contrato": "CG: 03/2024"
+  },
+  {
+    "nome": "CETEA",
+    "cnpj": "48.211.585/0061-56",
+    "uf": "PI",
+    "municipio": "Teresina",
+    "endereco": "Av. Higino Cunha, 1552 - Cristo Rei - CEP: 64014-220 - Teresina/PI",
+    "contrato": "CG: 023/2025"
+  },
+  {
+    "nome": "CRI ZONA NORTE",
+    "cnpj": "48.211.585/0034-83",
     "uf": "SP",
-    "municipio": "Garça",
-    "endereco": "Rua Gabriela, 144 - Labienópolis - CEP: 17404-310 - Garça/SP",
-    "contrato": ""
+    "municipio": "São Paulo",
+    "endereco": "Rua Voluntarios da Patria, 4301 - Santana - CEP: 02401-400 - São Paulo/SP",
+    "contrato": "SES-PCR-2022/74318"
   },
   {
     "nome": "GARÇA",
@@ -64,27 +112,35 @@
     "contrato": "Termo de colaboração n° 002/2023"
   },
   {
-    "nome": "ITU Serviço Residencial Terapêutico",
-    "cnpj": "48.211.585/0042-93",
+    "nome": "HMC CUBATÃO NOVO",
+    "cnpj": "48.211.585/0035-64",
     "uf": "SP",
-    "municipio": "Itu",
-    "endereco": "Rua Pedro de Paula Leite, 496 - Centro - CEP: 13300-043 - Itu/SP",
-    "contrato": "Termo de Convênio n° 39/2023"
+    "municipio": "Cubatão",
+    "endereco": "Avenida Henry Borden, 21 - Vila Santa Rosa - CEP: 11515-000 - Cubatão/SP",
+    "contrato": "010/2023"
   },
   {
-    "nome": "HOSPITAL ITURAMA",
-    "cnpj": "48.211.585/0039-98",
-    "uf": "MG",
-    "municipio": "Iturama",
-    "endereco": "Rua Cidade do Prata, 415 (Sala 1) - Centro - CEP: 38280-000 - Iturama/MG",
-    "contrato": "15/2024"
+    "nome": "HOSPITAL DE TERESINA - AREOLINO DE ABREU",
+    "cnpj": "48.211.585/0057-70",
+    "uf": "PI",
+    "municipio": "Teresina",
+    "endereco": "Rua Joe Soares Ferry, 2420 - Primavera - CEP: 64002-520 - Teresina/PI",
+    "contrato": ""
   },
   {
-    "nome": "UPA DR THELMO JACAREÍ",
-    "cnpj": "48.211.585/0009-72",
-    "uf": "SP",
-    "municipio": "Jacareí",
-    "endereco": "Rua dos Ferroviários, 528 - Jardim Mesquita - CEP: 12327-683 - Jacareí/SP",
+    "nome": "HOSPITAL DE VALENÇA - HOSPITAL REGIONAL EUSTAQUIO PORTELA",
+    "cnpj": "48.211.585/0047-06",
+    "uf": "PI",
+    "municipio": "Valença do Piauí",
+    "endereco": "Av. Santos Dumont, S/N - Centro - CEP: 64300-000 - Valença do Piauí/PI",
+    "contrato": "CG: 035/2025"
+  },
+  {
+    "nome": "HOSPITAL ESTADUAL DR JULIO HARTMAN HEJH",
+    "cnpj": "48.211.585/0055-08",
+    "uf": "PI",
+    "municipio": "Esperantina",
+    "endereco": "Praça Marechal Deodoro da Fonseca, 341 - Centro - CEP: 64180-000 - Esperantina/PI",
     "contrato": ""
   },
   {
@@ -96,155 +152,19 @@
     "contrato": ""
   },
   {
-    "nome": "UPA OEIRAS",
-    "cnpj": "48.211.585/0048-89",
+    "nome": "HOSPITAL ITURAMA",
+    "cnpj": "48.211.585/0039-98",
+    "uf": "MG",
+    "municipio": "Iturama",
+    "endereco": "Rua Cidade do Prata, 415 (Sala 1) - Centro - CEP: 38280-000 - Iturama/MG",
+    "contrato": "15/2024"
+  },
+  {
+    "nome": "HOSPITAL JOAO LUIZ DE MORAES - DERMEVAL LOBÃO",
+    "cnpj": "48.211.585/0050-01",
     "uf": "PI",
-    "municipio": "Oeiras",
-    "endereco": "Av. Totonho Freitas, 657 - Oeiras Novas - CEP: 64500-000 - Oeiras/PI",
-    "contrato": "CG:26/2025"
-  },
-  {
-    "nome": "HOSPITAL REGIONAL DEOLINDO COUTO (HOSPITAL DE OEIRAS)",
-    "cnpj": "48.211.585/0049-60",
-    "uf": "PI",
-    "municipio": "Oeiras",
-    "endereco": "Av. Totonho Freitas, S/N - Centro - CEP: 64500-000 - Oeiras/PI",
-    "contrato": "CG:26/2025"
-  },
-  {
-    "nome": "CENTRAL DE EXAMES DE OEIRAS",
-    "cnpj": "48.211.585/0058-50",
-    "uf": "PI",
-    "municipio": "Oeiras",
-    "endereco": "Rua Conego Cardoso, 491 - Centro - CEP: 64500-000 - Oeiras/PI",
-    "contrato": "CG: 39/2025"
-  },
-  {
-    "nome": "UPA PICOS",
-    "cnpj": "48.211.585/0041-02",
-    "uf": "PI",
-    "municipio": "Picos",
-    "endereco": "Rua Joaquim Pacífico da Silva, S/N - Catavento - CEP: 64.607-328 - Picos/PI",
-    "contrato": "CG:01/2024"
-  },
-  {
-    "nome": "HOSPITAL REGIONAL DE PICOS",
-    "cnpj": "48.211.585/0045-36",
-    "uf": "PI",
-    "municipio": "Picos",
-    "endereco": "Av. Senador Helvidio Nunes, S/N - Paraibinha - CEP: 64606-245 - Picos/PI",
-    "contrato": "04/2024"
-  },
-  {
-    "nome": "CENTRAL DE EXAMES DE PICOS",
-    "cnpj": "48.211.585/0046-17",
-    "uf": "PI",
-    "municipio": "Picos",
-    "endereco": "Rua Francisco da Costa Araújo, 29 - Centro CEP: 64600-076 - Picos/PI",
-    "contrato": "CG:07/2024"
-  },
-  {
-    "nome": "HOSPITAL REGIONAL JUSTINO LUZ",
-    "cnpj": "48.211.585/0051-84",
-    "uf": "PI",
-    "municipio": "Picos",
-    "endereco": "Praça Dr. Antenor Neiva, 184 - Bomba, CEP: 64601-391 - Picos/PI",
-    "contrato": "11/2025"
-  },
-  {
-    "nome": "NUCLEO ADM PICOS",
-    "cnpj": "48.211.585/0059-31",
-    "uf": "PI",
-    "municipio": "Picos",
-    "endereco": "Avenida Senador Helvídio Nunes, 1384 (Sala 20) - Catavento - CEP: 64607-165 - Picos/PI",
-    "contrato": ""
-  },
-  {
-    "nome": "AME PROMISSÃO",
-    "cnpj": "48.211.585/0037-26",
-    "uf": "SP",
-    "municipio": "Promissão",
-    "endereco": "Av. Arthur Franco, 215 (Quadra Ant 210) - Centro - CEP: 16370-000 - Promissão/SP",
-    "contrato": "SEI 024.00060553/2023-39"
-  },
-  {
-    "nome": "CER II SÃO JOÃO DO PIAUÍ",
-    "cnpj": "48.211.585/0044-55",
-    "uf": "PI",
-    "municipio": "São João do Piauí",
-    "endereco": "Rua Papagaio, 700 - Vila Betânia - CEP: 64760-000 - São João do Piaui-PI",
-    "contrato": "CG: 03/2024"
-  },
-  {
-    "nome": "HOSPITAL REGIONAL TERESINHA NUNES DE BARROS",
-    "cnpj": "48.211.585/0053-46",
-    "uf": "PI",
-    "municipio": "São João do Piauí",
-    "endereco": "Avenida Cândido Coelho, 1215 - Centro - CEP: 64760-000 - São João do Piauí/PI",
-    "contrato": ""
-  },
-  {
-    "nome": "SEDE Corporativo",
-    "cnpj": "48.211.585/0030-50",
-    "uf": "SP",
-    "municipio": "São Paulo",
-    "endereco": "Rua Pascoal Pais, 525 (Conj 12) - Vila Cordeiro - CEP: 04581-000 - São Paulo/SP",
-    "contrato": ""
-  },
-  {
-    "nome": "ZONA NORTE SÃO PAULO",
-    "cnpj": "48.211.585/0032-11",
-    "uf": "SP",
-    "municipio": "São Paulo",
-    "endereco": "Rua Conselheiro Saraiva, 826 - Santana - CEP: 02037-021 - São Paulo/SP",
-    "contrato": "R025/2021-SMS.G/CPCS"
-  },
-  {
-    "nome": "PAI ZONA NORTE",
-    "cnpj": "48.211.585/0033-00",
-    "uf": "SP",
-    "municipio": "São Paulo",
-    "endereco": "Rua Voluntarios da Patria, 4301 (Bloco Psiquiátrico B) - Santana - CEP: 02401-400 - São Paulo/SP",
-    "contrato": "SES-PRC-2022/74165"
-  },
-  {
-    "nome": "CRI ZONA NORTE",
-    "cnpj": "48.211.585/0034-83",
-    "uf": "SP",
-    "municipio": "São Paulo",
-    "endereco": "Rua Voluntarios da Patria, 4301 - Santana - CEP: 02401-400 - São Paulo/SP",
-    "contrato": "SES-PCR-2022/74318"
-  },
-  {
-    "nome": "CENTRAL DE EXAMES SÃO RAIMUNDO NONATO",
-    "cnpj": "48.211.585/0062-37",
-    "uf": "PI",
-    "municipio": "São Raimundo Nonato",
-    "endereco": "Rua Elizeu Paes Landim, S/N - Aldeia - CEP: 64770-000 - São Raimundo Nonato/PI",
-    "contrato": ""
-  },
-  {
-    "nome": "UPA DE SÃO RAIMUNDO NONATO",
-    "cnpj": "48.211.585/0063-18",
-    "uf": "PI",
-    "municipio": "São Raimundo Nonato",
-    "endereco": "Rua Doutor Humberto Paixão, SN - Aeroporto - CEP: 64770-000 - São Raimundo Nonato/PI",
-    "contrato": "CG:34/2025"
-  },
-  {
-    "nome": "HOSPITAL SÃO RAIMUNDO NONATO",
-    "cnpj": "48.211.585/0064-07",
-    "uf": "PI",
-    "municipio": "São Raimundo Nonato",
-    "endereco": "Rua Cap. Newton Rubéns, 1351 - Aldeias - CEP: 64770-000 - São Raimundo Nonato/PI",
-    "contrato": "CG: 33/2025"
-  },
-  {
-    "nome": "Núcleo teresina",
-    "cnpj": "48.211.585/0038-07",
-    "uf": "PI",
-    "municipio": "Teresina",
-    "endereco": "Rua Tabelião José Basilio, 1675 - Fatima - CEP 64048-190 - Teresina/PI",
+    "municipio": "Demerval Lobão",
+    "endereco": "Rua Francisco Carvalho de Melo, S/N - Centro - CEP: 64390-000 - Demerval Lobão/PI",
     "contrato": ""
   },
   {
@@ -256,28 +176,92 @@
     "contrato": "CG:035/2023"
   },
   {
-    "nome": "HOSPITAL DE TERESINA - AREOLINO DE ABREU",
-    "cnpj": "48.211.585/0057-70",
+    "nome": "HOSPITAL REG.SENADOR ARCO VERDE URUÇUÍ",
+    "cnpj": "48.211.585/0054-27",
     "uf": "PI",
-    "municipio": "Teresina",
-    "endereco": "Rua Joe Soares Ferry, 2420 - Primavera - CEP: 64002-520 - Teresina/PI",
+    "municipio": "Uruçuí",
+    "endereco": "Avenida José Cavalcante, S/N - Centro - CEP: 64860-000 - Uruçuí/PI",
     "contrato": ""
   },
   {
-    "nome": "CETEA",
-    "cnpj": "48.211.585/0061-56",
+    "nome": "HOSPITAL REGIONAL DE PICOS",
+    "cnpj": "48.211.585/0045-36",
     "uf": "PI",
-    "municipio": "Teresina",
-    "endereco": "Av. Higino Cunha, 1552 - Cristo Rei - CEP: 64014-220 - Teresina/PI",
-    "contrato": "CG: 023/2025"
+    "municipio": "Picos",
+    "endereco": "Av. Senador Helvidio Nunes, S/N - Paraibinha - CEP: 64606-245 - Picos/PI",
+    "contrato": "04/2024"
   },
   {
-    "nome": "CENTRAL DE EXAMES DE TERESINA",
-    "cnpj": "48.211.585/0066-60",
+    "nome": "HOSPITAL REGIONAL DEOLINDO COUTO (HOSPITAL DE OEIRAS)",
+    "cnpj": "48.211.585/0049-60",
+    "uf": "PI",
+    "municipio": "Oeiras",
+    "endereco": "Av. Totonho Freitas, S/N - Centro - CEP: 64500-000 - Oeiras/PI",
+    "contrato": "CG:26/2025"
+  },
+  {
+    "nome": "HOSPITAL REGIONAL JUSTINO LUZ",
+    "cnpj": "48.211.585/0051-84",
+    "uf": "PI",
+    "municipio": "Picos",
+    "endereco": "Praça Dr. Antenor Neiva, 184 - Bomba, CEP: 64601-391 - Picos/PI",
+    "contrato": "11/2025"
+  },
+  {
+    "nome": "HOSPITAL REGIONAL TERESINHA NUNES DE BARROS",
+    "cnpj": "48.211.585/0053-46",
+    "uf": "PI",
+    "municipio": "São João do Piauí",
+    "endereco": "Avenida Cândido Coelho, 1215 - Centro - CEP: 64760-000 - São João do Piauí/PI",
+    "contrato": ""
+  },
+  {
+    "nome": "HOSPITAL SÃO RAIMUNDO NONATO",
+    "cnpj": "48.211.585/0064-07",
+    "uf": "PI",
+    "municipio": "São Raimundo Nonato",
+    "endereco": "Rua Cap. Newton Rubéns, 1351 - Aldeias - CEP: 64770-000 - São Raimundo Nonato/PI",
+    "contrato": "CG: 33/2025"
+  },
+  {
+    "nome": "ITU Serviço Residencial Terapêutico",
+    "cnpj": "48.211.585/0042-93",
+    "uf": "SP",
+    "municipio": "Itu",
+    "endereco": "Rua Pedro de Paula Leite, 496 - Centro - CEP: 13300-043 - Itu/SP",
+    "contrato": "Termo de Convênio n° 39/2023"
+  },
+  {
+    "nome": "MATRIZ",
+    "cnpj": "48.211.585/0001-15",
+    "uf": "SP",
+    "municipio": "Garça",
+    "endereco": "Rua Gabriela, 144 - Labienópolis - CEP: 17404-310 - Garça/SP",
+    "contrato": ""
+  },
+  {
+    "nome": "NUCLEO ADM PICOS",
+    "cnpj": "48.211.585/0059-31",
+    "uf": "PI",
+    "municipio": "Picos",
+    "endereco": "Avenida Senador Helvídio Nunes, 1384 (Sala 20) - Catavento - CEP: 64607-165 - Picos/PI",
+    "contrato": ""
+  },
+  {
+    "nome": "Núcleo teresina",
+    "cnpj": "48.211.585/0038-07",
     "uf": "PI",
     "municipio": "Teresina",
-    "endereco": "Avenida Higino Cunha, 1552 - Ilhotas - CEP: 64014-220 - Teresina/PI",
-    "contrato": "CG: 38/2025"
+    "endereco": "Rua Tabelião José Basilio, 1675 - Fatima - CEP 64048-190 - Teresina/PI",
+    "contrato": ""
+  },
+  {
+    "nome": "PAI ZONA NORTE",
+    "cnpj": "48.211.585/0033-00",
+    "uf": "SP",
+    "municipio": "São Paulo",
+    "endereco": "Rua Voluntarios da Patria, 4301 (Bloco Psiquiátrico B) - Santana - CEP: 02401-400 - São Paulo/SP",
+    "contrato": "SES-PRC-2022/74165"
   },
   {
     "nome": "PRONTO ATENDIMENTO SÃO VICENTE DE PAULO (UPA TOBIAS BARRETO)",
@@ -288,35 +272,51 @@
     "contrato": "CG:04/2025"
   },
   {
-    "nome": "HOSPITAL REG.SENADOR ARCO VERDE URUÇUÍ",
-    "cnpj": "48.211.585/0054-27",
-    "uf": "PI",
-    "municipio": "Uruçuí",
-    "endereco": "Avenida José Cavalcante, S/N - Centro - CEP: 64860-000 - Uruçuí/PI",
+    "nome": "SEDE Corporativo",
+    "cnpj": "48.211.585/0030-50",
+    "uf": "SP",
+    "municipio": "São Paulo",
+    "endereco": "Rua Pascoal Pais, 525 (Conj 12) - Vila Cordeiro - CEP: 04581-000 - São Paulo/SP",
     "contrato": ""
   },
   {
-    "nome": "CENTRAL DE EXAMES DE URUÇUÍ",
-    "cnpj": "48.211.585/0060-75",
+    "nome": "UPA DE SÃO RAIMUNDO NONATO",
+    "cnpj": "48.211.585/0063-18",
     "uf": "PI",
-    "municipio": "Uruçuí",
-    "endereco": "Av Santos Dumont, S/N - Aeroporto - CEP: 64860-000 - Uruçuí - PI",
-    "contrato": "CG: 40/2025"
+    "municipio": "São Raimundo Nonato",
+    "endereco": "Rua Doutor Humberto Paixão, SN - Aeroporto - CEP: 64770-000 - São Raimundo Nonato/PI",
+    "contrato": "CG:34/2025"
   },
   {
-    "nome": "HOSPITAL DE VALENÇA - HOSPITAL REGIONAL EUSTAQUIO PORTELA",
-    "cnpj": "48.211.585/0047-06",
-    "uf": "PI",
-    "municipio": "Valença do Piauí",
-    "endereco": "Av. Santos Dumont, S/N - Centro - CEP: 64300-000 - Valença do Piauí/PI",
-    "contrato": "CG: 035/2025"
+    "nome": "UPA DR THELMO JACAREÍ",
+    "cnpj": "48.211.585/0009-72",
+    "uf": "SP",
+    "municipio": "Jacareí",
+    "endereco": "Rua dos Ferroviários, 528 - Jardim Mesquita - CEP: 12327-683 - Jacareí/SP",
+    "contrato": ""
   },
   {
-    "nome": "CENTRAL DE EXAMES DE VALENÇA DO PIAUÍ",
-    "cnpj": "48.211.585/0056-99",
+    "nome": "UPA OEIRAS",
+    "cnpj": "48.211.585/0048-89",
     "uf": "PI",
-    "municipio": "Valença do Piauí",
-    "endereco": "Rua Gen Propécio de Castro, S/N - Centro - CEP:64300-000 - Valença do Piauí/PI",
-    "contrato": "CG: 25/2025"
+    "municipio": "Oeiras",
+    "endereco": "Av. Totonho Freitas, 657 - Oeiras Novas - CEP: 64500-000 - Oeiras/PI",
+    "contrato": "CG:26/2025"
+  },
+  {
+    "nome": "UPA PICOS",
+    "cnpj": "48.211.585/0041-02",
+    "uf": "PI",
+    "municipio": "Picos",
+    "endereco": "Rua Joaquim Pacífico da Silva, S/N - Catavento - CEP: 64.607-328 - Picos/PI",
+    "contrato": "CG:01/2024"
+  },
+  {
+    "nome": "ZONA NORTE SÃO PAULO",
+    "cnpj": "48.211.585/0032-11",
+    "uf": "SP",
+    "municipio": "São Paulo",
+    "endereco": "Rua Conselheiro Saraiva, 826 - Santana - CEP: 02037-021 - São Paulo/SP",
+    "contrato": "R025/2021-SMS.G/CPCS"
   }
 ]
