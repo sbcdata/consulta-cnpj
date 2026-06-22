@@ -85,7 +85,7 @@
     "uf": "PI",
     "municipio": "Picos",
     "endereco": "Rua Francisco da Costa Araújo, 29 - Centro CEP: 64600-076 - Picos/PI",
-    "contrato": ""
+    "contrato": "CG: 42/2025"
   },
   {
     "nome": "CER II SÃO JOÃO DO PIAUÍ",
@@ -192,12 +192,20 @@
     "contrato": "CG:035/2023"
   },
   {
+    "nome": "HOSPITAL MUNICIPAL SÃO JOSÉ (ITAPUÍ)",
+    "cnpj": "48.211.585/0072-09",
+    "uf": "SP",
+    "municipio": "Itapuí",
+    "endereco": "Avenida Paes de Barros, 326 - Centro - CEP: 17230-023 - Itapuí/SP",
+    "contrato": "Termo de colaboração n° 19/2025"
+  },
+  {
     "nome": "HOSPITAL REG.SENADOR ARCO VERDE URUÇUÍ",
     "cnpj": "48.211.585/0054-27",
     "uf": "PI",
     "municipio": "Uruçuí",
     "endereco": "Avenida José Cavalcante, S/N - Centro - CEP: 64860-000 - Uruçuí/PI",
-    "contrato": ""
+    "contrato": "CG: 07/2026"
   },
   {
     "nome": "HOSPITAL REGIONAL DE PICOS",
@@ -309,7 +317,7 @@
     "uf": "SP",
     "municipio": "Jacareí",
     "endereco": "Rua dos Ferroviários, 528 - Jardim Mesquita - CEP: 12327-683 - Jacareí/SP",
-    "contrato": ""
+    "contrato": "CG: 2.001.00/2022"
   },
   {
     "nome": "UPA OEIRAS",
@@ -326,6 +334,14 @@
     "municipio": "Picos",
     "endereco": "Rua Joaquim Pacífico da Silva, S/N - Catavento - CEP: 64.607-328 - Picos/PI",
     "contrato": "CG:01/2024"
+  },
+  {
+    "nome": "UPA ZONA LESTE DE SANTOS",
+    "cnpj": "48.211.585/0073-90",
+    "uf": "SP",
+    "municipio": "Santos",
+    "endereco": "Praça Visconde de Ouro Preto, S/N° - Estuário - CEP: 11025-190 - Santos/SP",
+    "contrato": "CONTRATO Nº 500262/2026 - SMS"
   },
   {
     "nome": "ZONA NORTE SÃO PAULO",
